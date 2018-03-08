@@ -52,9 +52,9 @@ def get_rotation_gp(t, y, yerr, period, min_period, max_period):
         log_P=np.log(period),
         bounds=dict(
             log_a=(-20.0, 10.0),
-            log_Q1=(-0.5*np.log(2.0), 8.0),
+            log_Q1=(-0.5*np.log(2.0), 11.0),
             mix_par=(-5.0, 5.0),
-            log_Q2=(-0.5*np.log(2.0), 8.0),
+            log_Q2=(-0.5*np.log(2.0), 11.0),
             log_P=(np.log(min_period), np.log(max_period)),
         )
     )
